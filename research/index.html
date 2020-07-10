@@ -43,27 +43,32 @@ title: Metin Balaban | Research
   </div>
 </div>
 <div class="col-md-8" style='margin-top:20px'>
-  <h4>Title Two</h4>
-  <p> In this project, I developed an algorithm called APPLES, 
-  a distance-based method for phylogenetic placement. Compared to ML, APPLES is
-  an order of magnitude faster and more memory efficient, and unlike ML, it is
-  able to place on large backbone trees (tested for up to 200,000 leaves). We
-  show that using dense references improves accuracy substantially so that
-  APPLES on dense trees is more accurate than ML on sparser trees, where it can
-  run. Finally, APPLES can accurately identify samples without assembled
-  reference or aligned queries using kmer-based distances, a scenario that ML
-  cannot handle. APPLES is available publically at
-  <a href="https://github.com/balabanmetin/apples"
-  target="_blank">Github</a>.
-  [Distance-based methods; genome skimming;phylogenetic placement.]
+  <h4>Phylogenetic double placement of mixed samples</h4>
+  <p> Consider a simple computational problem. The inputs are (i) the set of
+  mixed reads generated from a sample that combines two organisms and (ii)
+  separate sets of reads for several reference genomes of known origins. The
+  goal is to find the two organisms that constitute the mixed sample. When
+  constituents are absent from the reference set, we seek to phylogenetically
+  position them with respect to the underlying tree of the reference species.
+  In this project, we introduce a model that relates distances between a mixed sample and
+  reference species to the distances between constituents and reference
+  species. Our model is based on Jaccard indices computed between each sample
+  represented as k-mer sets. The model, built on several assumptions and
+  approximations, allows us to formalize the phylogenetic double-placement
+  problem as a non- convex optimization problem that decomposes mixture
+  distances and performs phylogenetic placement simultaneously. Using a variety
+  of techniques, we are able to solve this optimization problem numerically. We
+  test the resulting method, called MISA, on a varied set of simulated and
+  biological datasets. Despite all the assumptions used, the method performs
+  remarkably well in practice. The sofware and data are available at
+  <a href="https://github.com/balabanmetin/misa"
+      target="_blank">Github</a>.
   </p>
   <h5>Related work</h5>
   <ul class='pubs'>
-    <li> Metin Balaban, Shahab Sarmashghi, Siavash Mirarab. <b>APPLES: Scalable
-        Distance-Based Phylogenetic Placement with or without Alignments</b>.
-      Systematic Biology, Volume 69, Issue 3, May 2020, Pages 566–578,
-      <a href="https://doi.org/10.1093/sysbio/syz063"
-       target="_blank">https://doi.org/10.1093/sysbio/syz063</a>.
+    <li> Metin Balaban,  Siavash Mirarab. <b>Phylogenetic double placement of
+        mixed samples</b>.
+      Bioinformatics, in press.
     </li>
   </ul>
 </div>
