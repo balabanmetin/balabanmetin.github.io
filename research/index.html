@@ -12,18 +12,26 @@ title: Metin Balaban | Research
 </div>
 <div class="col-md-8" style='margin-top:20px'>
   <h4>APPLES: Fast Distance-based Phylogenetic Placement</h4>
-  <p> In this project, I developed an algorithm called APPLES, a distance-based method of phylogenetic
-  placement that improves on ML by more than an order of magnitude in speed and
-  memory and comes very close to ML in accuracy. APPLES has better accuracy
-  than ML for placing on trees with thousands of species and can place on trees
-  with a hundred thousands species where ML cannot run. Finally, APPLES can
-  accurately identify samples without assembled sequences for the reference or
-  the query using k-mer-based distances, a scenario that ML cannot handle.
+  <p> In this project, I developed an algorithm called APPLES, 
+  a distance-based method for phylogenetic placement. Compared to ML, APPLES is
+  an order of magnitude faster and more memory efficient, and unlike ML, it is
+  able to place on large backbone trees (tested for up to 200,000 leaves). We
+  show that using dense references improves accuracy substantially so that
+  APPLES on dense trees is more accurate than ML on sparser trees, where it can
+  run. Finally, APPLES can accurately identify samples without assembled
+  reference or aligned queries using kmer-based distances, a scenario that ML
+  cannot handle. APPLES is available publically at
+  <a href="https://github.com/balabanmetin/apples"
+  target="_blank">Github</a>.
+  [Distance-based methods; genome skimming;phylogenetic placement.]
   </p>
   <h5>Related work</h5>
   <ul class='pubs'>
-    <li> M. Balaban, S. Sarmashghi, S. Mirarab. <b>APPLES: Fast Distance-based
-      Phylogenetic Placement</b>. Under Review, 2018.
+    <li> Metin Balaban, Shahab Sarmashghi, Siavash Mirarab. <b>APPLES: Scalable
+        Distance-Based Phylogenetic Placement with or without Alignments</b>.
+      Systematic Biology, Volume 69, Issue 3, May 2020, Pages 566–578,
+      <a href="https://doi.org/10.1093/sysbio/syz063"
+       target="_blank">https://doi.org/10.1093/sysbio/syz063</a>.
     </li>
   </ul>
 </div>
