@@ -11,18 +11,11 @@ title: Metin Balaban | Research
   </div>
 </div>
 <div class="col-md-8" style='margin-top:20px'>
-  <h4>APPLES: Scalable Distance-Based Phylogenetic Placement with or without Alignments</h4>
-  <p> In this project, I developed an algorithm called APPLES, 
-  a distance-based method for phylogenetic placement. Compared to ML, APPLES is
-  an order of magnitude faster and more memory efficient, and unlike ML, it is
-  able to place on large backbone trees (tested for up to 200,000 leaves). We
-  show that using dense references improves accuracy substantially so that
-  APPLES on dense trees is more accurate than ML on sparser trees, where it can
-  run. Finally, APPLES can accurately identify samples without assembled
-  reference or aligned queries using kmer-based distances, a scenario that ML
-  cannot handle. APPLES is available publically at
+  <h4>Fast and scalable Distance-Based Phylogenetic Placement</h4>
+  <p> 
+Phylogenetic placement of query samples on an existing phylogeny is increasingly used in microbiome analyses and other biological studies. As the size of available reference trees used in microbiome analyses continues to grow, there is a growing need for methods that place sequences on ultra-large trees (e.g. 200,000 leaves)  with high accuracy. In this project, I developed an algorithm called APPLES (and its successor APPLES-2), a distance-based method for phylogenetic placement. In extensive studies, we showed that APPLES-2 is more accurate and scalable, even more so than some of the leading maximum likelihood methods. This scalability is owed to a divide-and-conquer technique that limits distance calculation and phylogenetic placement to parts of the tree most relevant to each query. APPLES-2 is available publicly at
   <a href="https://github.com/balabanmetin/apples"
-  target="_blank">Github</a>.
+  target="_blank">GitHub</a>.
   [Distance-based methods; genome skimming;phylogenetic placement.]
   </p>
   <h5>Related work</h5>
@@ -33,12 +26,16 @@ title: Metin Balaban | Research
       <a href="https://doi.org/10.1093/sysbio/syz063"
        target="_blank">https://doi.org/10.1093/sysbio/syz063</a>.
     </li>
+    <li>
+	Metin Balaban, Daniel Roush, Qiyun Zhu, Siavash Mirarab. <b>APPLES-2 : Faster and More Accurate Distance-Based Phylogenetic Placement Using Divide and Conquer.</b>. BioRxiv Preprint, 2021.02.14.431150. (2021). <a href="https://doi.org/10.1101/2021.02.14.431150"
+       target="_blank">doi:10.1101/2021.02.14.431150</a>.
+    </li>
   </ul>
 </div>
 
 <div class="col-md-4" style='margin-top:20px'>
   <div class="imgAbt">
-    <img style = 'margin: auto' width="260" height="260" class="img-responsive
+    <img style = 'margin: auto' width="300" height="300" class="img-responsive
     img-rounded" src="/images/misa.png" />
   </div>
 </div>
@@ -50,30 +47,45 @@ title: Metin Balaban | Research
   goal is to find the two organisms that constitute the mixed sample. When
   constituents are absent from the reference set, we seek to phylogenetically
   position them with respect to the underlying tree of the reference species.
-  In this project, we introduce a model that relates distances between a mixed sample and
-  reference species to the distances between constituents and reference
-  species. Our model is based on Jaccard indices computed between each sample
+  In this project, we introduce a model based on Jaccard indices computed between each sample
   represented as k-mer sets. The model, built on several assumptions and
   approximations, allows us to formalize the phylogenetic double-placement
-  problem as a non- convex optimization problem that decomposes mixture
+  problem as a non-convex optimization problem that decomposes mixture
   distances and performs phylogenetic placement simultaneously. Using a variety
-  of techniques, we are able to solve this optimization problem numerically. We
-  test the resulting method, called MISA, on a varied set of simulated and
-  biological datasets. Despite all the assumptions used, the method performs
-  remarkably well in practice. The sofware and data are available at
+  of techniques, we are able to solve this optimization problem numerically. 
+  Resulting method called MISA and data are available at
   <a href="https://github.com/balabanmetin/misa"
       target="_blank">Github</a>.
   </p>
   <h5>Related work</h5>
   <ul class='pubs'>
     <li> Metin Balaban,  Siavash Mirarab. <b>Phylogenetic double placement of
-        mixed samples</b>.
-      Bioinformatics, in press.
+        mixed samples</b>. Bioinformatics 36, no. Supplement 1 (2020):i335–43. <a href="https://doi.org/10.1093/bioinformatics/btaa489"
+       target="_blank">doi:10.1093/bioinformatics/btaa489</a>.
     </li>
   </ul>
 </div>
 
-
+<div class="col-md-4" style='margin-top:20px'>
+  <div class="imgAbt">
+    <img style = 'margin: auto' width="300" height="300" class="img-responsive
+    img-rounded" src="/images/treecluster.jpg" />
+  </div>
+</div>
+<div class="col-md-8" style='margin-top:20px'>
+  <h4>Clustering biological sequences using phylogenetic trees</h4>
+  <p> Clustering homologous sequences based on their similarity is a problem that appears in many bioinformatics applications. The fact that sequences cluster is ultimately the result of their phylogenetic relationships. We defined a family of optimization problems that, given an arbitrary tree, return the minimum number of clusters such that all clusters adhere to constraints on their heterogeneity. These three problems can be solved in time that increases linearly with the size of the tree. We implement these algorithms in a tool called TreeCluster, which we test on three applications: OTU clustering for microbiome data, HIV transmission clustering, and divide-and-conquer multiple sequence alignment. We show that, by using tree-based distances, TreeCluster generates more internally consistent clusters than alternatives and improves the effectiveness of downstream applications. TreeCluster is available at
+  <a href="https://github.com/niemasd/TreeCluster"
+      target="_blank">Github</a>.
+  </p>
+  <h5>Related work</h5>
+  <ul class='pubs'>
+    <li> Metin Balaban, Niema Moshiri, Uyen Mai, Xingfan Jia, Siavash Mirarab. <b>TreeCluster: Clustering biological sequences using phylogenetic trees</b>. PLOS ONE 14, no. 8 (2019): e0221068. 
+      <a href="https://doi.org/10.1371/journal.pone.0221068"
+       target="_blank">doi:10.1371/journal.pone.0221068</a>.
+    </li>
+  </ul>
+</div>
 <!--
 <div class="col-md-4" style='margin-top:20px'>
   <div class="imgAbt">
