@@ -116,19 +116,18 @@ We are building a system for building and continuously updating of a tree-of-lif
 
 <div class="col-md-4" style='margin-top:20px'>
   <div class="imgAbt">
-    <img style = 'margin: auto' width="300" height="300" class="img-responsive
-    img-rounded" src="/images/wol.png" />
+    <img style = 'margin: auto' width="500" height="300" class="img-responsive
+    img-rounded" src="/images/tk4.png" />
   </div>
-	Image credit to <a href="https://doi.org/10.1038/s41467-019-13443-4"
-       target="_blank">Zhu et. al (2019)</a>.
 </div>
 <div class="col-md-8" style='margin-top:20px'>
-  <h4>Automatic cataloguing of genomes of the multi-domain tree of life</h4>
-  <p>  Much as we have maps to organize our geographical data, we need ways to organize the ever-increasing volume of genomic data. In RefSeq and other resources, more than half a million microbial genomes are now available and more are added everyday. 
-Using trees for organizing all these genomes across domains of life is a principled and useful approach for two reasons:
-1) trees are biologically meaningful representations, capturing the phylogenetic (i.e., evolutionary) relationships of species, albeit imperfectly, and 
-2) they provide a convenient and scalable data structure that facilitates downstream analyses (e.g., retrieval and clustering). 
-We are building a system for building and continuously updating of a tree-of-life of all available prokaryotic genomes where their phylogeny can be inferred and continuously updated, a wide range of downstream microbiome analyses will benefit. 
+  <h4>Genome-wide alignment-free distance estimation under a no strand-bias model</h4>
+  <p> 
+The alignment-free methods have much appeal in terms of simplifying the process of inference, especially when analyzing genome-wide data. 
+Despite the appeal, one limitation of alignment-free methods is that they typically rely on simplified models of sequence evolution such as Jukes-Cantor.
+It is possible to compute pairwise distances under more complex models by computing frequencies of base substitutions provided that these quantities can be estimated in the alignment-free setting. An underappreciated limitation is that for many forms of genome-wide data, which arguably present the best use case for alignment-free methods, the strand of DNA sequences is unknown. 
+Under such conditions, the no-strand bias models are the best that we can do. Here, we show how to calculate distances under a no-strain bias restriction of the General Time Reversible (GTR) model called TK4 without relying on alignments or even assemblies using k-mers. 
+ 
   </p>
   <h5>Ongoing Project</h5>
   <!--<ul class='pubs'>
@@ -155,7 +154,7 @@ We are building a system for building and continuously updating of a tree-of-lif
   </li>
   </ul>
 </div>
-
+<!--
 <div class="col-md-4" style='margin-top:20px'>
   <div class="imgAbt">
     <img style = 'margin: auto' width="260" height="260" class="img-responsive img-rounded" src="/images/frequency.png" />
