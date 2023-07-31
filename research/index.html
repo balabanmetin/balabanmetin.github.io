@@ -4,6 +4,46 @@ title: Metin Balaban | Research
 ---
 <div class="container">
 <h1>Research Projects</h1>
+
+
+<div class="col-md-4" style='margin-top:20px'>
+  <div class="imgAbt">
+    <img style = 'margin: auto' width="500" height="500" class="img-responsive
+    img-rounded" src="/images/200k.png" />
+  </div>
+</div>
+<div class="col-md-8" style='margin-top:20px'>
+  <h4>Generation of accurate, expandable phylogenomic trees with uDance (Nature Biotechnology)</h4>
+  <p>  Phylogenetic trees provide a framework for organizing evolutionary histories across the tree of life and aid downstream comparative analyses such as metagenomic identification. Methods that rely on single-marker genes such as 16S rRNA have produced trees of limited accuracy with hundreds of thousands of organisms, whereas methods that use genome-wide data are not scalable to large numbers of genomes. We introduce updating trees using divide-and-conquer (uDance), a method that enables updatable genome-wide inference using a divide-and-conquer strategy that refines different parts of the tree independently and can build off of existing trees, with high accuracy and scalability. With uDance, we infer a species tree of roughly 200,000 genomes using 387 marker genes, totaling 42.5 billion amino acid residues. uDance is available publicly at
+    <a href="https://github.com/balabanmetin/uDance"
+    target="_blank">GitHub</a>.
+  </p>
+  <h5>Related work</h5>
+  <ul class='pubs'>
+    <li> Metin Balaban, Yueyu Jiang, Qiyun Zhu et al. <b>Generation of accurate, expandable phylogenomic trees with uDance</b>.
+      Nature Biotechnology, July 2023. 
+      <a href="https://doi.org/10.1038/s41587-023-01868-8"
+       target="_blank">https://doi.org/10.1038/s41587-023-01868-8</a>.
+    </li>
+    <li>
+    Daniel McDonald, Yueyu Jiang, Metin Balaban et al. <b>Greengenes2 unifies microbial data in a single reference tree.</b> Nature Biotechnology, July 2023.  <a href="https://doi.org/10.1038/s41587-023-01845-1"
+        target="_blank">https://doi.org/10.1038/s41587-023-01845-1</a>.
+      </li>
+  </ul>
+  <h5>Press coverage</h5>
+  <ul class='pubs'>
+    <li> Efficiently evolving phylogenetic trees: introducing a scalable approach to constructing and updating phylogenies.
+    <a href="https://cmi.ucsd.edu/2023/07/27/efficiently-evolving-phylogenetic-trees-introducing-a-scalable-approach-to-constructing-and-updating-phylogenies/"
+    target="_blank">Link to article</a>.
+    </li>
+    <li> New resource harmonizes 16s and shotgun sequencing data for microbiome research.
+      <a href="https://today.ucsd.edu/story/new-resource-harmonizes-16s-and-shotgun-sequencing-data-for-microbiome-research"
+      target="_blank">Link to article</a>.
+      </li>
+  </ul>
+</div>
+
+
 <div class="col-md-4" style='margin-top:20px'>
   <div class="imgAbt">
     <img style = 'margin: auto' width="260" height="260" class="img-responsive
@@ -28,7 +68,7 @@ Phylogenetic placement of query samples on an existing phylogeny is increasingly
     </li>
     <li>
 	Metin Balaban, Yueyu Jiang, Daniel Roush, Qiyun Zhu, Siavash Mirarab. <b>Fast and Accurate Distance-based Phylogenetic Placement using Divide and Conquer.</b> Molecular Ecology Resources, 00, 1–15 (2021). <a href="https://doi. org/10.1111/1755-0998.13527"
-       target="_blank">https://doi. org/10.1111/1755-0998.13527</a>.
+       target="_blank">https://doi.org/10.1111/1755-0998.13527</a>.
     </li>
   </ul>
 </div>
@@ -89,33 +129,6 @@ Phylogenetic placement of query samples on an existing phylogeny is increasingly
 
 <div class="col-md-4" style='margin-top:20px'>
   <div class="imgAbt">
-    <img style = 'margin: auto' width="300" height="300" class="img-responsive
-    img-rounded" src="/images/wol.png" />
-  </div>
-	Image credit to <a href="https://doi.org/10.1038/s41467-019-13443-4"
-       target="_blank">Zhu et. al (2019)</a>.
-</div>
-<div class="col-md-8" style='margin-top:20px'>
-  <h4>Automatic cataloguing of genomes of the multi-domain tree of life</h4>
-  <p>  Much as we have maps to organize our geographical data, we need ways to organize the ever-increasing volume of genomic data. In RefSeq and other resources, more than half a million microbial genomes are now available and more are added everyday. 
-Using trees for organizing all these genomes across domains of life is a principled and useful approach for two reasons:
-1) trees are biologically meaningful representations, capturing the phylogenetic (i.e., evolutionary) relationships of species, albeit imperfectly, and 
-2) they provide a convenient and scalable data structure that facilitates downstream analyses (e.g., retrieval and clustering). 
-We are building a system for building and continuously updating of a tree-of-life of all available prokaryotic genomes where their phylogeny can be inferred and continuously updated, a wide range of downstream microbiome analyses will benefit. 
-  </p>
-  <h5>Ongoing Project</h5>
-  <!--<ul class='pubs'>
-    <li> Metin Balaban, Niema Moshiri, Uyen Mai, Xingfan Jia, Siavash Mirarab. <b>TreeCluster: Clustering biological sequences using phylogenetic trees</b>. PLOS ONE 14, no. 8 (2019): e0221068. 
-      <a href="https://doi.org/10.1371/journal.pone.0221068"
-       target="_blank">doi:10.1371/journal.pone.0221068</a>.
-    </li>
-  </ul>
--->
-</div>
-
-
-<div class="col-md-4" style='margin-top:20px'>
-  <div class="imgAbt">
     <img style = 'margin: auto' width="500" height="300" class="img-responsive
     img-rounded" src="/images/tk4.png" />
   </div>
@@ -129,14 +142,13 @@ It is possible to compute pairwise distances under more complex models by comput
 Under such conditions, the no-strand bias models are the best that we can do. Here, we show how to calculate distances under a no-strain bias restriction of the General Time Reversible (GTR) model called TK4 without relying on alignments or even assemblies using k-mers. 
  
   </p>
-  <h5>Ongoing Project</h5>
-  <!--<ul class='pubs'>
-    <li> Metin Balaban, Niema Moshiri, Uyen Mai, Xingfan Jia, Siavash Mirarab. <b>TreeCluster: Clustering biological sequences using phylogenetic trees</b>. PLOS ONE 14, no. 8 (2019): e0221068. 
-      <a href="https://doi.org/10.1371/journal.pone.0221068"
-       target="_blank">doi:10.1371/journal.pone.0221068</a>.
+  <h5>Related work</h5>
+  <ul class='pubs'>
+    <li> Metin Balaban,  Nishat Anjum Bristy,  Ahnaf Faisal,  Md Shamsuzzoha Bayzid, Siavash Mirarab. <b>Genome-wide alignment-free phylogenetic distance estimation under a no strand-bias model</b>. Bioinformatics Advances, Volume 2, Issue 1, 2022, vbac055.
+      <a href="https://doi.org/10.1093/bioadv/vbac055"
+       target="_blank">https://doi.org/10.1093/bioadv/vbac055</a>.
     </li>
   </ul>
--->
 </div>
 <!--
 <div class="col-md-4" style='margin-top:20px'>
